@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Newsletter Subscription Form</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+    <h1>Newsletter Subscription Form</h1>
+    <br />
+    <br />
+    <h3>Subscribe</h3>
+    <form action ="/newsletter" method="post">
+        Email: <br />
+        <input type="text" name="email"></input>
+        <br />
+        <br />
+        <input type="submit" value="Submit" />
+
+    </form>
+    <%if(typeof errors == "undefined"){%>
+        <p><%=errors%></p>
+    <% } %>
+
+  </body>
+</html>
